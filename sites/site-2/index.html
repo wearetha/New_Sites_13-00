@@ -1,1 +1,383 @@
-WHITEHEAD_PLACEHOLDER
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whitehead Electrical | Electrician Horwich, Bolton</title>
+<meta name="description" content="Professional domestic and commercial electrical services in Horwich, Bolton. Rewiring, repairs, installations and testing by Matt Whitehead — 5-star rated electrician.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Whitehead Electrical">
+<meta name="geo.region" content="GB-BOL">
+<meta name="geo.placename" content="Horwich, Bolton">
+<meta name="geo.position" content="53.602;-2.548">
+<meta name="ICBM" content="53.602, -2.548">
+<meta property="og:title" content="Whitehead Electrical | Electrician Horwich, Bolton">
+<meta property="og:description" content="Professional domestic and commercial electrical services in Horwich, Bolton. Rewiring, repairs, installations and testing by Matt Whitehead — 5-star rated electrician.">
+<meta property="og:type" content="business.business">
+<meta property="og:url" content="https://REPLACE-ME.com">
+<meta property="og:image" content="https://REPLACE-ME.com/og-image.jpg">
+<meta property="og:locale" content="en_GB">
+<meta property="business:contact_data:locality" content="Horwich">
+<meta property="business:contact_data:region" content="Greater Manchester">
+<meta property="business:contact_data:postal_code" content="BL6">
+<meta property="business:contact_data:country_name" content="United Kingdom">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Whitehead Electrical | Electrician Horwich, Bolton">
+<meta name="twitter:description" content="Professional domestic and commercial electrical services in Horwich, Bolton. Rewiring, repairs, installations and testing by Matt Whitehead — 5-star rated electrician.">
+<meta name="twitter:image" content="https://REPLACE-ME.com/og-image.jpg">
+<link rel="canonical" href="https://REPLACE-ME.com/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A1628'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='45' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230A1628'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='45' font-weight='bold' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#0a0e1a;color:#e2e8f0;overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:#0a0e1a}
+::-webkit-scrollbar-thumb{background:#1e3a5f;border-radius:4px}
+.cursor{position:fixed;width:20px;height:20px;border:2px solid #f59e0b;border-radius:50%;pointer-events:none;z-index:9999;transition:transform .15s,mix-blend-mode .3s;transform:translate(-50%,-50%)}
+.cursor.hover{width:50px;height:50px;background:rgba(245,158,11,.1);mix-blend-mode:difference}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;transition:all .4s}
+.nav.scrolled{background:rgba(10,14,26,.95);backdrop-filter:blur(20px);padding:1rem 3rem}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:#f59e0b}
+.nav-links{display:flex;gap:2.5rem;align-items:center}
+.nav-links a{font-size:.9rem;font-weight:500;transition:color .3s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:#f59e0b;transition:width .3s}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:#f59e0b;color:#0a0e1a;padding:.75rem 2rem;border-radius:50px;font-weight:700;transition:all .3s}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(245,158,11,.3)}
+.mobile-menu-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;z-index:1001}
+.mobile-menu-btn span{width:25px;height:2px;background:#fff;transition:all .3s}
+.mobile-menu-btn.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.mobile-menu-btn.active span:nth-child(2){opacity:0}
+.mobile-menu-btn.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(10,14,26,.98);backdrop-filter:blur(30px);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;z-index:999;clip-path:circle(0% at calc(100% - 50px) 40px);transition:clip-path .6s cubic-bezier(.77,0,.175,1)}
+.mobile-menu.active{clip-path:circle(150% at calc(100% - 50px) 40px)}
+.mobile-menu a{font-size:2rem;font-weight:700;opacity:0;transform:translateY(20px);transition:all .4s}
+.mobile-menu.active a{opacity:1;transform:translateY(0)}
+.mobile-menu.active a:nth-child(1){transition-delay:.1s}
+.mobile-menu.active a:nth-child(2){transition-delay:.15s}
+.mobile-menu.active a:nth-child(3){transition-delay:.2s}
+.mobile-menu.active a:nth-child(4){transition-delay:.25s}
+.hero{min-height:100vh;display:flex;align-items:center;padding:0 5%;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 80% 20%,rgba(245,158,11,.1) 0%,transparent 50%),radial-gradient(ellipse at 20% 80%,rgba(30,58,95,.3) 0%,transparent 50%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:50px 50px;opacity:.5}
+.hero-content{position:relative;z-index:2;max-width:700px}
+.hero-eyebrow{font-size:.85rem;font-weight:600;color:#f59e0b;letter-spacing:3px;text-transform:uppercase;margin-bottom:1.5rem;opacity:0}
+.hero h1{font-size:clamp(3rem,6vw,5rem);font-weight:900;line-height:1.1;margin-bottom:1.5rem;opacity:0}
+.hero h1 span{color:#f59e0b}
+.hero-desc{font-size:1.1rem;line-height:1.8;color:#94a3b8;margin-bottom:2.5rem;max-width:500px;opacity:0}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;opacity:0}
+.btn-primary{background:#f59e0b;color:#0a0e1a;padding:1rem 2.5rem;border-radius:50px;font-weight:700;transition:all .3s;display:inline-flex;align-items:center;gap:.5rem}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(245,158,11,.3)}
+.btn-secondary{border:2px solid rgba(255,255,255,.2);padding:1rem 2.5rem;border-radius:50px;font-weight:600;transition:all .3s}
+.btn-secondary:hover{border-color:#f59e0b;color:#f59e0b}
+.hero-stats{position:absolute;bottom:3rem;right:5%;display:flex;gap:3rem;opacity:0}
+.stat{text-align:center}
+.stat-number{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:#f59e0b}
+.stat-label{font-size:.8rem;color:#64748b;text-transform:uppercase;letter-spacing:2px}
+.trust{position:absolute;bottom:2rem;left:5%;display:flex;gap:2rem;align-items:center;opacity:0}
+.trust-stars{color:#fbbf24;font-size:1.2rem}
+.trust-text{font-size:.85rem;color:#64748b}
+.section{padding:8rem 5%}
+.section-header{text-align:center;margin-bottom:5rem;opacity:0}
+.section-eyebrow{font-size:.8rem;font-weight:600;color:#f59e0b;letter-spacing:3px;text-transform:uppercase;margin-bottom:1rem}
+.section-title{font-size:clamp(2.5rem,5vw,4rem);font-weight:900;margin-bottom:1rem}
+.section-subtitle{font-size:1.1rem;color:#64748b;max-width:600px;margin:0 auto}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+.service-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2.5rem;transition:all .4s;opacity:0;transform:translateY(40px)}
+.service-card:hover{transform:translateY(-10px);border-color:rgba(245,158,11,.3);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.service-icon{width:60px;height:60px;background:rgba(245,158,11,.1);border-radius:15px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:1.8rem}
+.service-card h3{font-size:1.3rem;margin-bottom:.75rem}
+.service-card p{color:#64748b;line-height:1.7}
+.about{display:flex;align-items:center;gap:5rem;padding:8rem 5%}
+.about-image{flex:1;position:relative;opacity:0}
+.about-image::before{content:'';position:absolute;inset:-20px;border:2px solid rgba(245,158,11,.2);border-radius:30px;transform:rotate(3deg)}
+.about-image-inner{background:rgba(30,58,95,.2);border-radius:20px;padding:3rem;text-align:center}
+.about-content{flex:1;opacity:0}
+.about-content h2{font-size:clamp(2rem,4vw,3.5rem);font-weight:900;margin-bottom:1.5rem}
+.about-content p{color:#94a3b8;line-height:1.8;margin-bottom:1.5rem;font-size:1.05rem}
+.about-highlight{display:flex;gap:3rem;margin-top:3rem}
+.highlight-item{text-align:center}
+.highlight-number{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:#f59e0b}
+.highlight-label{font-size:.8rem;color:#64748b;text-transform:uppercase;letter-spacing:2px}
+.testimonials{background:rgba(255,255,255,.02);padding:8rem 5%}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2rem}
+.testimonial-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2.5rem;opacity:0;transform:translateY(30px)}
+.testimonial-stars{color:#fbbf24;margin-bottom:1rem;font-size:1.1rem}
+.testimonial-text{font-style:italic;color:#cbd5e1;line-height:1.7;margin-bottom:1.5rem;font-size:1.05rem}
+.testimonial-author{display:flex;align-items:center;gap:1rem}
+.testimonial-avatar{width:50px;height:50px;border-radius:50%;background:rgba(245,158,11,.2);display:flex;align-items:center;justify-content:center;font-weight:700;color:#f59e0b}
+.testimonial-name{font-weight:600}
+.testimonial-role{font-size:.85rem;color:#64748b}
+.contact-section{padding:8rem 5%;text-align:center}
+.contact-content{max-width:700px;margin:0 auto;opacity:0}
+.contact-content h2{font-size:clamp(2rem,4vw,3rem);font-weight:900;margin-bottom:1.5rem}
+.contact-content>p{color:#64748b;margin-bottom:3rem;font-size:1.1rem}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:3rem}
+.contact-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:2rem;transition:all .3s}
+.contact-item:hover{border-color:rgba(245,158,11,.3)}
+.contact-item .icon{font-size:2rem;margin-bottom:1rem}
+.contact-item h4{margin-bottom:.5rem}
+.contact-item p{color:#64748b;font-size:.9rem}
+.contact-item a{color:#f59e0b;transition:color .3s}
+.contact-item a:hover{color:#fff}
+.footer{border-top:1px solid rgba(255,255,255,.08);padding:3rem 5%;text-align:center}
+.footer p{color:#475569;font-size:.9rem}
+.sticky-call{position:fixed;bottom:0;left:0;right:0;background:rgba(10,14,26,.98);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.1);padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center;z-index:998;transform:translateY(100%);transition:transform .4s}
+.sticky-call.visible{transform:translateY(0)}
+.sticky-call-text{font-size:.9rem;font-weight:600}
+.sticky-call-btn{background:#f59e0b;color:#0a0e1a;padding:.6rem 1.5rem;border-radius:50px;font-weight:700;font-size:.9rem}
+@media(max-width:768px){.nav-links{display:none}.mobile-menu-btn{display:flex}.hero{flex-direction:column;text-align:center;padding-top:8rem}.hero-stats{position:relative;bottom:auto;right:auto;justify-content:center;margin-top:3rem}.trust{position:relative;left:auto;bottom:auto;justify-content:center;margin-top:2rem}.about{flex-direction:column}.about-highlight{justify-content:center}.section{padding:5rem 5%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+
+<nav class="nav" id="nav">
+<a href="#" class="nav-logo">WE</a>
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#testimonials">Reviews</a>
+<a href="#contact">Contact</a>
+<a href="tel:07714102111" class="nav-cta">Call Matt</a>
+</div>
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+<span></span><span></span><span></span>
+</button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#testimonials">Reviews</a>
+<a href="#contact">Contact</a>
+<a href="tel:07714102111">Call Matt: 07714 102111</a>
+</div>
+
+<section class="hero" id="hero">
+<div class="hero-bg"></div>
+<div class="hero-grid"></div>
+<div class="hero-content">
+<p class="hero-eyebrow">Domestic & Commercial</p>
+<h1>Whitehead<br><span>Electrical</span></h1>
+<p class="hero-desc">Professional electrical services in Horwich, Bolton. Full and partial rewiring, repairs, new installations and testing by director Matt Whitehead.</p>
+<div class="hero-btns">
+<a href="tel:07714102111" class="btn-primary magnetic">📞 Call Matt: 07714 102111</a>
+<a href="https://wa.me/447714102111" class="btn-secondary magnetic">WhatsApp</a>
+</div>
+</div>
+<div class="hero-stats">
+<div class="stat">
+<div class="stat-number" data-count="5.0">0</div>
+<div class="stat-label">Star Rating</div>
+</div>
+<div class="stat">
+<div class="stat-number" data-count="6">0</div>
+<div class="stat-label">Reviews</div>
+</div>
+</div>
+<div class="trust">
+<div class="trust-stars">★★★★★</div>
+<div class="trust-text">5.0 rating · 6 Google Reviews · Horwich, Bolton</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="section-header">
+<p class="section-eyebrow">What We Do</p>
+<h2 class="section-title">Our Services</h2>
+<p class="section-subtitle">Safe, compliant and efficient electrical workmanship for homes and businesses across Horwich and Bolton.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">🏠</div>
+<h3>Domestic Electrical</h3>
+<p>Complete home electrical services from socket replacements to full house rewires. NICEIC compliant work guaranteed.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🏢</div>
+<h3>Commercial Electrical</h3>
+<p>Professional electrical solutions for offices, shops and commercial premises. Minimal disruption to your business.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">🔌</div>
+<h3>Full & Partial Rewiring</h3>
+<p>Complete and partial property rewiring. We work cleanly and efficiently to minimise disruption to your home or business.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">⚡</div>
+<h3>Electrical Repairs</h3>
+<p>Fast diagnostic and repair service for all electrical faults. Power cuts, faulty circuits, tripping breakers — we fix it all.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">💡</div>
+<h3>New Installations</h3>
+<p>New lighting, power circuits, consumer units and more. From planning to completion, we handle every aspect professionally.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">📋</div>
+<h3>Electrical Testing</h3>
+<p>EICR inspections, PAT testing and periodic electrical testing. Full certification provided for landlords and businesses.</p>
+</div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="about-image">
+<div class="about-image-inner">
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+<circle cx="100" cy="100" r="80" stroke="#f59e0b" stroke-width="2" opacity="0.3"/>
+<text x="100" y="115" text-anchor="middle" fill="#f59e0b" font-family="Playfair Display" font-size="48" font-weight="900">WE</text>
+</svg>
+<p style="color:#64748b;margin-top:1rem;font-size:.9rem">Horwich Electrical Ltd</p>
+</div>
+</div>
+<div class="about-content">
+<h2>About Whitehead Electrical</h2>
+<p>Whitehead Electrical is a professional, reliable electrical contractor based in Horwich, Bolton. Operated by director <strong>Matt Whitehead</strong>, we deliver safe, compliant and efficient workmanship for every project.</p>
+<p>We proudly serve both domestic and commercial clients across Horwich and surrounding areas. Our commitment to quality has earned us a <strong>5-star Google rating</strong> from our valued customers.</p>
+<div class="about-highlight">
+<div class="highlight-item">
+<div class="highlight-number" data-count="5.0">0</div>
+<div class="highlight-label">Star Rating</div>
+</div>
+<div class="highlight-item">
+<div class="highlight-number" data-count="6">0</div>
+<div class="highlight-label">Happy Customers</div>
+</div>
+<div class="highlight-item">
+<div class="highlight-number" data-count="100" data-suffix="%">0</div>
+<div class="highlight-label">Satisfaction</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="testimonials" id="testimonials">
+<div class="section-header">
+<p class="section-eyebrow">Testimonials</p>
+<h2 class="section-title">What Customers Say</h2>
+<p class="section-subtitle">Genuine reviews from local customers in Horwich and Bolton.</p>
+</div>
+<div class="testimonial-grid">
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Matt was excellent — turned up on time, did a full rewire of our house and everything was perfect. Very tidy worker and reasonably priced. Would definitely recommend."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">J</div>
+<div>
+<div class="testimonial-name">James R.</div>
+<div class="testimonial-role">Horwich</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="testimonial-stars">★★★★★</div>
+<p class="testimonial-text">"Professional, punctual and very knowledgeable. Matt sorted out our electrical issues quickly and explained everything clearly. Highly recommended electrician in Horwich."</p>
+<div class="testimonial-author">
+<div class="testimonial-avatar">A</div>
+<div>
+<div class="testimonial-name">Amanda P.</div>
+<div class="testimonial-role">Bolton</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact-section" id="contact">
+<div class="contact-content">
+<p class="section-eyebrow">Get In Touch</p>
+<h2>Need an Electrician?</h2>
+<p>Call Matt directly for a free quote. Professional electrical services across Horwich, Bolton and surrounding areas.</p>
+<div class="contact-grid">
+<div class="contact-item">
+<div class="icon">📞</div>
+<h4>Phone</h4>
+<p><a href="tel:07714102111">07714 102111</a></p>
+</div>
+<div class="contact-item">
+<div class="icon">💬</div>
+<h4>WhatsApp</h4>
+<p><a href="https://wa.me/447714102111">Message on WhatsApp</a></p>
+</div>
+<div class="contact-item">
+<div class="icon">📍</div>
+<h4>Address</h4>
+<p>24 Foxholes Rd<br>Horwich, Bolton BL6 6AP</p>
+</div>
+<div class="contact-item">
+<div class="icon">🕐</div>
+<h4>Hours</h4>
+<p>Please call to confirm availability</p>
+</div>
+</div>
+<a href="tel:07714102111" class="btn-primary magnetic" style="font-size:1.2rem;padding:1.2rem 3rem">📞 Call Matt: 07714 102111</a>
+</div>
+</section>
+
+<footer class="footer">
+<p>© 2025 Whitehead Electrical · 24 Foxholes Rd, Horwich, Bolton BL6 6AP · <a href="tel:07714102111" style="color:#f59e0b">07714 102111</a></p>
+</footer>
+
+<div class="sticky-call" id="stickyCall">
+<div class="sticky-call-text">📞 Need an electrician?</div>
+<a href="tel:07714102111" class="sticky-call-btn">Call Matt</a>
+</div>
+
+<script>
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+if (!isTouchDevice) {
+const cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', (e) => {cursor.style.left = e.clientX + 'px';cursor.style.top = e.clientY + 'px';});
+document.querySelectorAll('.magnetic').forEach(el => {el.addEventListener('mouseenter', () => cursor.classList.add('hover'));el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));});
+}
+const menuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+menuBtn.addEventListener('click', () => {menuBtn.classList.toggle('active');mobileMenu.classList.toggle('active');});
+mobileMenu.querySelectorAll('a').forEach(a => {a.addEventListener('click', () => {menuBtn.classList.remove('active');mobileMenu.classList.remove('active');});});
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {if (window.scrollY > 50) nav.classList.add('scrolled');else nav.classList.remove('scrolled');}, {passive: true});
+const stickyCall = document.getElementById('stickyCall');
+window.addEventListener('scroll', () => {if (window.scrollY > window.innerHeight * 0.8) stickyCall.classList.add('visible');else stickyCall.classList.remove('visible');}, {passive: true});
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined' && !prefersReducedMotion) {
+gsap.registerPlugin(ScrollTrigger);
+gsap.to('.hero-eyebrow', {opacity: 1, y: 0, duration: 0.8, delay: 0.2, ease: 'power3.out'});
+gsap.to('.hero h1', {opacity: 1, y: 0, duration: 1, delay: 0.4, ease: 'power3.out'});
+gsap.to('.hero-desc', {opacity: 1, y: 0, duration: 0.8, delay: 0.6, ease: 'power3.out'});
+gsap.to('.hero-btns', {opacity: 1, y: 0, duration: 0.8, delay: 0.8, ease: 'power3.out'});
+gsap.to('.hero-stats', {opacity: 1, duration: 1, delay: 1, ease: 'power3.out'});
+gsap.to('.trust', {opacity: 1, duration: 0.8, delay: 1.2, ease: 'power3.out'});
+gsap.utils.toArray('.section-header').forEach(h => {gsap.to(h, {scrollTrigger: {trigger: h, start: 'top 80%'}, opacity: 1, y: 0, duration: 0.8, ease: 'power3.out'});});
+gsap.utils.toArray('.service-card').forEach((c, i) => {gsap.to(c, {scrollTrigger: {trigger: c, start: 'top 85%'}, opacity: 1, y: 0, duration: 0.6, delay: i * 0.1, ease: 'power3.out'});});
+gsap.to('.about-image', {scrollTrigger: {trigger: '.about', start: 'top 70%'}, opacity: 1, x: 0, duration: 1, ease: 'power3.out'});
+gsap.to('.about-content', {scrollTrigger: {trigger: '.about', start: 'top 70%'}, opacity: 1, x: 0, duration: 1, delay: 0.2, ease: 'power3.out'});
+gsap.utils.toArray('.testimonial-card').forEach((c, i) => {gsap.to(c, {scrollTrigger: {trigger: c, start: 'top 85%'}, opacity: 1, y: 0, duration: 0.6, delay: i * 0.15, ease: 'power3.out'});});
+gsap.to('.contact-content', {scrollTrigger: {trigger: '.contact-section', start: 'top 70%'}, opacity: 1, y: 0, duration: 0.8, ease: 'power3.out'});
+gsap.utils.toArray('[data-count]').forEach(el => {
+const target = parseFloat(el.dataset.count);
+const suffix = el.dataset.suffix || '';
+ScrollTrigger.create({trigger: el, start: 'top 85%', onEnter: () => {
+gsap.to(el, {innerHTML: target + suffix, duration: 2, ease: 'power2.out',
+onUpdate: function() {const val = parseFloat(el.innerHTML) || 0;if (target % 1 !== 0) el.innerHTML = val.toFixed(1) + suffix;else el.innerHTML = Math.round(val) + suffix;}
+});
+}, once: true});
+});
+} else {
+document.querySelectorAll('.hero-eyebrow, .hero h1, .hero-desc, .hero-btns, .hero-stats, .trust, .section-header, .service-card, .about-image, .about-content, .testimonial-card, .contact-content').forEach(el => el.style.opacity = '1');
+}
+</script>
+</body>
+</html>
