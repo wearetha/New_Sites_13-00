@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hair Shop | Hairdresser Horwich, Bolton</title>
+<meta name="description" content="Expert hairdressing in Horwich, Bolton. Specialising in balayage, hair extensions, braiding, keratin treatments and all hair types. 5-star rated salon.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="The Hair Shop">
+<meta name="geo.region" content="GB-BOL">
+<meta name="geo.placename" content="Horwich, Bolton">
+<meta name="geo.position" content="53.602;-2.548">
+<meta name="ICBM" content="53.602, -2.548">
+<meta property="og:title" content="The Hair Shop | Hairdresser Horwich, Bolton">
+<meta property="og:description" content="Expert hairdressing in Horwich, Bolton. Specialising in balayage, hair extensions, braiding, keratin treatments and all hair types. 5-star rated salon.">
+<meta property="og:type" content="business.business">
+<meta property="og:url" content="https://REPLACE-ME.com">
+<meta property="og:image" content="https://REPLACE-ME.com/og-image.jpg">
+<meta property="og:locale" content="en_GB">
+<meta property="business:contact_data:locality" content="Horwich">
+<meta property="business:contact_data:region" content="Greater Manchester">
+<meta property="business:contact_data:postal_code" content="BL6">
+<meta property="business:contact_data:country_name" content="United Kingdom">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Hair Shop | Hairdresser Horwich, Bolton">
+<meta name="twitter:description" content="Expert hairdressing in Horwich, Bolton. Specialising in balayage, hair extensions, braiding, keratin treatments and all hair types. 5-star rated salon.">
+<meta name="twitter:image" content="https://REPLACE-ME.com/og-image.jpg">
+<link rel="canonical" href="https://REPLACE-ME.com/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='#C4907A'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='45' font-weight='bold' fill='white' text-anchor='middle'>T</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='#C4907A'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='45' font-weight='bold' fill='white' text-anchor='middle'>T</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hair Shop | Horwich, Bolton</title>
+<meta name="description" content="5-star rated hairdressing salon in Horwich, Bolton. Specialising in balayage, hair extensions, braiding, and treatments for all hair types.">
+<noscript><style>.hero-word,.service-card,.about-section,.contact-card,.review-badge{opacity:1!important;transform:none!important;}</style></noscript>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- GSAP + ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Lenis Smooth Scroll -->
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+<style>
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+:root {
+  --blush: #F5E6E0;
+  --rose-gold: #C4907A;
+  --soft-pink: #E8C4B8;
+  --cream: #FAF6F3;
+  --charcoal: #3D2E2A;
+  --warm-grey: #7A635C;
+  --white: #FFFFFF;
+  --gold: #D4A853;
+
+  --font-headline: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Work Sans', 'Segoe UI', sans-serif;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-2xl: 8rem;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background-color: var(--cream);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* No-JS: content always visible */
+.no-js .gsap-reveal,
+.no-js .service-card,
+.no-js .about-content,
+.no-js .review-content {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ============================================
+   CUSTOM CURSOR (desktop only)
+   ============================================ */
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--rose-gold);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  mix-blend-mode: difference;
+  display: none;
+}
+
+.custom-cursor.hover {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(196, 144, 122, 0.15);
+  border-color: var(--rose-gold);
+}
+
+@media (pointer: fine) and (min-width: 1024px) {
+  .custom-cursor {
+    display: block;
+  }
+  body {
+    cursor: none;
+  }
+  a, button, .clickable {
+    cursor: none;
+  }
+}
+
+/* ============================================
+   LAYOUT UTILITIES
+   ============================================ */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--space-lg);
+  }
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: var(--space-sm) 0;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.nav.scrolled {
+  background-color: rgba(250, 246, 243, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 20px rgba(61, 46, 42, 0.08);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--space-md);
+}
+
+.nav-logo {
+  font-family: var(--font-headline);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  letter-spacing: 0.05em;
+}
+
+.nav-logo span {
+  color: var(--rose-gold);
+}
+
+.nav-links {
+  display: none;
+  list-style: none;
+  gap: var(--space-lg);
+}
+
+.nav-links a {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--charcoal);
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background-color: var(--rose-gold);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: var(--rose-gold);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 8px;
+  z-index: 102;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--charcoal);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+/* ============================================
+   MOBILE MENU
+   ============================================ */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--blush);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-md);
+  transform: translateX(-100%);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+.mobile-menu a {
+  font-family: var(--font-headline);
+  font-size: 2rem;
+  color: var(--charcoal);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, color 0.3s ease;
+}
+
+.mobile-menu.open a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu.open a:nth-child(1) { transition-delay: 0.1s; }
+.mobile-menu.open a:nth-child(2) { transition-delay: 0.18s; }
+.mobile-menu.open a:nth-child(3) { transition-delay: 0.26s; }
+.mobile-menu.open a:nth-child(4) { transition-delay: 0.34s; }
+.mobile-menu.open a:nth-child(5) { transition-delay: 0.42s; }
+
+.mobile-menu a:hover {
+  color: var(--rose-gold);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, var(--blush) 0%, var(--cream) 100%);
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: var(--space-xl);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-word {
+  display: block;
+  font-family: var(--font-headline);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  color: var(--charcoal);
+}
+
+.hero-the {
+  font-size: clamp(2.5rem, 8vw, 3.75rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--warm-grey);
+  margin-bottom: 0.2em;
+  opacity: 0;
+}
+
+.hero-hair {
+  font-size: clamp(4rem, 15vw, 6.25rem);
+  font-weight: 700;
+  opacity: 0;
+}
+
+.hero-shop {
+  font-size: clamp(4rem, 15vw, 6.25rem);
+  font-weight: 700;
+  color: var(--rose-gold);
+  opacity: 0;
+}
+
+/* Scissors SVG in hero */
+.hero-scissors {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: clamp(180px, 40vw, 320px);
+  height: auto;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-scissors svg {
+  width: 100%;
+  height: auto;
+}
+
+.hero-scissors .scissors-blade {
+  stroke: var(--soft-pink);
+  stroke-width: 2;
+  fill: none;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+}
+
+.hero-tagline {
+  margin-top: var(--space-md);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--warm-grey);
+  opacity: 0;
+}
+
+.hero-rating {
+  margin-top: var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  font-size: 0.85rem;
+  color: var(--warm-grey);
+  opacity: 0;
+}
+
+.hero-rating .stars {
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+.hero-cta {
+  margin-top: var(--space-md);
+  opacity: 0;
+}
+
+.hero-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background-color: var(--rose-gold);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-cta a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(196, 144, 122, 0.35);
+  background-color: #b37d68;
+}
+
+/* Scroll chevron */
+.scroll-chevron {
+  position: absolute;
+  bottom: var(--space-md);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  opacity: 0;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.scroll-chevron svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--warm-grey);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+  40% { transform: translateX(-50%) translateY(10px); }
+  60% { transform: translateX(-50%) translateY(5px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-chevron {
+    animation: none;
+  }
+}
+
+/* ============================================
+   SVG DIVIDERS
+   ============================================ */
+.svg-divider {
+  display: block;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.svg-divider svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-divider-scissors {
+  height: 40px;
+}
+
+/* ============================================
+   SERVICES SECTION
+   ============================================ */
+.services {
+  padding: var(--space-xl) 0;
+  background-color: var(--cream);
+  position: relative;
+}
+
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  margin-bottom: var(--space-xs);
+}
+
+.section-title {
+  font-family: var(--font-headline);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.15;
+  margin-bottom: var(--space-lg);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 var(--space-md);
+  }
+}
+
+/* Service cards - asymmetric overlap */
+.service-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  box-shadow: 0 2px 12px rgba(61, 46, 42, 0.06);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.service-card:nth-child(odd) {
+  z-index: 2;
+}
+
+.service-card:nth-child(even) {
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .service-card:nth-child(1) { transform: translateY(0) translateY(40px); }
+  .service-card:nth-child(2) { transform: translateY(30px) translateY(40px); }
+  .service-card:nth-child(3) { transform: translateY(-10px) translateY(40px); }
+  .service-card:nth-child(4) { transform: translateY(20px) translateY(40px); }
+  .service-card:nth-child(5) { transform: translateY(-20px) translateY(40px); }
+  .service-card:nth-child(6) { transform: translateY(10px) translateY(40px); }
+  .service-card:nth-child(7) { transform: translateY(-30px) translateY(40px); }
+  .service-card:nth-child(8) { transform: translateY(40px) translateY(40px); }
+  .service-card:nth-child(9) { transform: translateY(0px) translateY(40px); }
+  .service-card:nth-child(10) { transform: translateY(-15px) translateY(40px); }
+}
+
+.service-card:hover {
+  transform: translateY(-8px) rotate(1deg) !important;
+  box-shadow: 0 16px 40px rgba(61, 46, 42, 0.12);
+}
+
+.service-card:nth-child(even):hover {
+  transform: translateY(-8px) rotate(-1deg) !important;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.service-card h3 {
+  font-family: var(--font-headline);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin-bottom: 6px;
+}
+
+.service-card p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--warm-grey);
+  line-height: 1.6;
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+.about {
+  padding: var(--space-xl) 0;
+  background: linear-gradient(135deg, var(--blush) 0%, var(--soft-pink) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .about-inner {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.about-content {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.about-content h2 {
+  font-family: var(--font-headline);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.15;
+  margin-bottom: var(--space-md);
+}
+
+.about-content p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--warm-grey);
+  line-height: 1.75;
+  margin-bottom: var(--space-sm);
+  max-width: 540px;
+}
+
+.about-rating-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--space-sm);
+  padding: 10px 20px;
+  background-color: var(--white);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: var(--charcoal);
+  box-shadow: 0 2px 12px rgba(61, 46, 42, 0.06);
+}
+
+.about-rating-inline .stars-inline {
+  color: var(--gold);
+  letter-spacing: 1px;
+}
+
+/* Hair strand SVG decoration */
+.hair-strand-deco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hair-strand-deco svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .hair-strand-deco {
+    width: 180px;
+    opacity: 0.2;
+  }
+}
+
+/* ============================================
+   REVIEWS SECTION
+   ============================================ */
+.reviews {
+  padding: var(--space-2xl) 0;
+  background-color: var(--cream);
+  text-align: center;
+  position: relative;
+}
+
+.review-content {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.review-number {
+  font-family: var(--font-headline);
+  font-size: clamp(6rem, 20vw, 10rem);
+  font-weight: 700;
+  color: var(--rose-gold);
+  line-height: 1;
+  display: block;
+}
+
+.review-stars {
+  font-size: 2rem;
+  color: var(--gold);
+  letter-spacing: 8px;
+  margin: var(--space-sm) 0;
+  display: block;
+}
+
+.review-label {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--warm-grey);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.review-count {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--warm-grey);
+  margin-top: var(--space-xs);
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+.contact {
+  padding: var(--space-xl) 0;
+  background-color: var(--charcoal);
+  color: var(--cream);
+  position: relative;
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .contact-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+  }
+}
+
+.contact-info h2 {
+  font-family: var(--font-headline);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: var(--space-md);
+  line-height: 1.15;
+}
+
+.contact-block {
+  margin-bottom: var(--space-md);
+}
+
+.contact-block-label {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact-block a,
+.contact-block p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--cream);
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.contact-block a:hover {
+  color: var(--rose-gold);
+}
+
+.hours-note {
+  font-style: italic;
+  color: var(--warm-grey);
+  font-size: 0.95rem;
+}
+
+/* Contact form */
+.contact-form {
+  background-color: rgba(250, 246, 243, 0.05);
+  border: 1px solid rgba(250, 246, 243, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    padding: var(--space-lg);
+  }
+}
+
+.form-group {
+  margin-bottom: var(--space-sm);
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--soft-pink);
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: rgba(250, 246, 243, 0.08);
+  border: 1px solid rgba(250, 246, 243, 0.15);
+  border-radius: var(--radius-sm);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(250, 246, 243, 0.35);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--rose-gold);
+  background-color: rgba(250, 246, 243, 0.12);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-error {
+  font-size: 0.8rem;
+  color: #e07a7a;
+  margin-top: 4px;
+  display: none;
+}
+
+.form-error.visible {
+  display: block;
+}
+
+.form-success {
+  font-size: 0.95rem;
+  color: #7bc47b;
+  padding: var(--space-sm);
+  background-color: rgba(123, 196, 123, 0.1);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+  display: none;
+}
+
+.form-success.visible {
+  display: block;
+}
+
+.btn-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 32px;
+  background-color: var(--rose-gold);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(196, 144, 122, 0.35);
+  background-color: #b37d68;
+}
+
+/* Magnetic hover effect (desktop) */
+@media (pointer: fine) and (min-width: 1024px) {
+  .btn-submit,
+  .hero-cta a {
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+}
+
+/* ============================================
+   MAP LINK
+   ============================================ */
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: var(--rose-gold);
+  transition: gap 0.3s ease;
+}
+
+.map-link:hover {
+  gap: 10px;
+}
+
+.map-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================
+   STICKY CALL BAR (mobile)
+   ============================================ */
+.sticky-call {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px var(--space-md);
+  background-color: var(--white);
+  box-shadow: 0 -4px 20px rgba(61, 46, 42, 0.1);
+  z-index: 90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sticky-call.visible {
+  transform: translateY(0);
+}
+
+.sticky-call a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.sticky-call a:first-child {
+  background-color: var(--rose-gold);
+  color: var(--white);
+}
+
+.sticky-call a:last-child {
+  background-color: var(--blush);
+  color: var(--charcoal);
+}
+
+.sticky-call a:hover {
+  transform: translateY(-1px);
+}
+
+@media (min-width: 768px) {
+  .sticky-call {
+    display: none;
+  }
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  padding: var(--space-lg) 0 var(--space-md);
+  background-color: var(--charcoal);
+  border-top: 1px solid rgba(250, 246, 243, 0.08);
+  color: var(--warm-grey);
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-sm);
+}
+
+.footer-logo {
+  font-family: var(--font-headline);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cream);
+}
+
+.footer-logo span {
+  color: var(--rose-gold);
+}
+
+.footer-address {
+  font-size: 0.85rem;
+  color: var(--warm-grey);
+}
+
+.footer-phone {
+  font-size: 0.9rem;
+  color: var(--soft-pink);
+  transition: color 0.3s ease;
+}
+
+.footer-phone:hover {
+  color: var(--rose-gold);
+}
+
+.footer-copy {
+  font-size: 0.75rem;
+  color: rgba(122, 99, 92, 0.6);
+  margin-top: var(--space-sm);
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-the,
+  .hero-hair,
+  .hero-shop,
+  .hero-scissors,
+  .hero-tagline,
+  .hero-rating,
+  .hero-cta,
+  .service-card,
+  .about-content,
+  .review-content {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .scissors-blade {
+    stroke-dashoffset: 0 !important;
+  }
+
+  .scroll-chevron {
+    animation: none;
+    opacity: 1 !important;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY: Focus styles
+   ============================================ */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--rose-gold);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   NO-JS FALLBACK
+   ============================================ */
+.no-js .hero-the,
+.no-js .hero-hair,
+.no-js .hero-shop,
+.no-js .hero-scissors,
+.no-js .hero-tagline,
+.no-js .hero-rating,
+.no-js .hero-cta,
+.no-js .scroll-chevron {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.no-js .scissors-blade {
+  stroke-dashoffset: 0 !important;
+}
+
+.no-js .service-card {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.no-js .about-content,
+.no-js .review-content {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.no-js .sticky-call {
+  display: none;
+}
+
+/* ============================================
+   RESPONSIVE: Large desktop
+   ============================================ */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+</style>
+</head>
+
+<body>
+<!-- Custom cursor -->
+<div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">THE <span>HAIR</span> SHOP</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#services" class="mobile-link">Services</a>
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#reviews" class="mobile-link">Reviews</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+  <a href="tel:07436278514" class="mobile-link">Call Now</a>
+</div>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <span class="hero-word hero-the" id="heroThe">The</span>
+    <span class="hero-word hero-hair" id="heroHair">HAIR</span>
+    <span class="hero-word hero-shop" id="heroShop">SHOP</span>
+  </div>
+
+  <!-- Scissors SVG cutting through -->
+  <div class="hero-scissors" id="heroScissors" aria-hidden="true">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Scissors illustration -->
+      <g transform="translate(100,100)">
+        <!-- Blade 1 -->
+        <path class="scissors-blade" d="M-10,-5 L70,-40 L75,-35 L-5,0 Z" />
+        <!-- Blade 2 -->
+        <path class="scissors-blade" d="M-10,5 L70,40 L75,35 L-5,0 Z" />
+        <!-- Handle 1 -->
+        <ellipse class="scissors-blade" cx="-25" cy="-15" rx="18" ry="12" transform="rotate(-20)" fill="none" />
+        <!-- Handle 2 -->
+        <ellipse class="scissors-blade" cx="-25" cy="15" rx="18" ry="12" transform="rotate(20)" fill="none" />
+        <!-- Pivot screw -->
+        <circle class="scissors-blade" cx="0" cy="0" r="4" fill="var(--soft-pink)" />
+      </g>
+    </svg>
+  </div>
+
+  <p class="hero-tagline" id="heroTagline">Horwich, Bolton</p>
+
+  <div class="hero-rating" id="heroRating">
+    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    <span>5.0 &middot; 19 Google reviews</span>
+  </div>
+
+  <div class="hero-cta" id="heroCta">
+    <a href="tel:07436278514" class="clickable">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      Call 07436 278514
+    </a>
+  </div>
+
+  <a href="#services" class="scroll-chevron" id="scrollChevron" aria-label="Scroll to services">
+    <svg viewBox="0 0 24 24">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </a>
+</section>
+
+<!-- SVG Divider: Scissors pattern -->
+<div class="svg-divider svg-divider-scissors" aria-hidden="true">
+  <svg viewBox="0 0 1200 40" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="combPattern" x="0" y="0" width="60" height="40" patternUnits="userSpaceOnUse">
+        <line x1="10" y1="10" x2="10" y2="30" stroke="#E8C4B8" stroke-width="1.5" opacity="0.5"/>
+        <line x1="20" y1="8" x2="20" y2="32" stroke="#E8C4B8" stroke-width="1.5" opacity="0.5"/>
+        <line x1="30" y1="10" x2="30" y2="30" stroke="#E8C4B8" stroke-width="1.5" opacity="0.5"/>
+        <line x1="40" y1="8" x2="40" y2="32" stroke="#E8C4B8" stroke-width="1.5" opacity="0.5"/>
+        <line x1="50" y1="10" x2="50" y2="30" stroke="#E8C4B8" stroke-width="1.5" opacity="0.5"/>
+      </pattern>
+    </defs>
+    <rect width="1200" height="40" fill="url(#combPattern)"/>
+  </svg>
+</div>
+
+<!-- ==================== SERVICES ==================== -->
+<section class="services" id="services">
+  <div class="container">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services-grid">
+      <div class="service-card" data-index="0">
+        <span class="service-icon">&#10024;</span>
+        <h3>Balayage</h3>
+        <p>Hand-painted highlights for a natural, sun-kissed look that grows out beautifully.</p>
+      </div>
+
+      <div class="service-card" data-index="1">
+        <span class="service-icon">&#127912;</span>
+        <h3>Hair Colouring</h3>
+        <p>Full colour, root touch-ups, toners and creative colour from experienced colourists.</p>
+      </div>
+
+      <div class="service-card" data-index="2">
+        <span class="service-icon">&#128152;</span>
+        <h3>Hair Extensions</h3>
+        <p>Add length and volume with premium quality extensions matched to your hair.</p>
+      </div>
+
+      <div class="service-card" data-index="3">
+        <span class="service-icon">&#128135;</span>
+        <h3>Hair Weaves</h3>
+        <p>Professional weave installations for a seamless, natural finish.</p>
+      </div>
+
+      <div class="service-card" data-index="4">
+        <span class="service-icon">&#127876;</span>
+        <h3>Curly Hair</h3>
+        <p>Specialist cuts and treatments designed specifically for curly and textured hair.</p>
+      </div>
+
+      <div class="service-card" data-index="5">
+        <span class="service-icon">&#127872;</span>
+        <h3>Hair Braiding</h3>
+        <p>Beautiful, protective braiding styles crafted with precision and care.</p>
+      </div>
+
+      <div class="service-card" data-index="6">
+        <span class="service-icon">&#9986;&#65039;</span>
+        <h3>Keratin Treatment</h3>
+        <p>Smoothing keratin treatments to eliminate frizz and add brilliant shine.</p>
+      </div>
+
+      <div class="service-card" data-index="7">
+        <span class="service-icon">&#11088;</span>
+        <h3>Permanent Straightening</h3>
+        <p>Long-lasting straightening solutions for silky, manageable hair.</p>
+      </div>
+
+      <div class="service-card" data-index="8">
+        <span class="service-icon">&#128135;&#8205;&#9792;&#65039;</span>
+        <h3>Wig Install</h3>
+        <p>Expert wig installation and styling for a flawless, natural appearance.</p>
+      </div>
+
+      <div class="service-card" data-index="9">
+        <span class="service-icon">&#128135;</span>
+        <h3>Women's Haircuts</h3>
+        <p>Precision cutting from classic styles to the latest trends, tailored to you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SVG Divider -->
+<div class="svg-divider" aria-hidden="true">
+  <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 Q150,10 300,30 T600,30 T900,30 T1200,30" stroke="#E8C4B8" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M0,35 Q150,55 300,35 T600,35 T900,35 T1200,35" stroke="#C4907A" stroke-width="1" fill="none" opacity="0.3"/>
+  </svg>
+</div>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about" id="about">
+  <!-- Hair strand SVG decoration -->
+  <div class="hair-strand-deco" aria-hidden="true">
+    <svg viewBox="0 0 180 600" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="strandGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#C4907A" stop-opacity="0.6"/>
+          <stop offset="50%" stop-color="#E8C4B8" stop-opacity="0.8"/>
+          <stop offset="100%" stop-color="#C4907A" stop-opacity="0.4"/>
+        </linearGradient>
+      </defs>
+      <!-- Wavy hair strands -->
+      <path d="M60,0 Q90,60 70,120 Q50,180 80,240 Q110,300 75,360 Q40,420 85,480 Q130,540 70,600" stroke="url(#strandGrad)" stroke-width="2" fill="none"/>
+      <path d="M100,0 Q70,80 110,160 Q150,240 90,320 Q30,400 100,480 Q170,560 90,600" stroke="url(#strandGrad)" stroke-width="1.5" fill="none"/>
+      <path d="M140,0 Q120,100 150,200 Q180,300 130,400 Q80,500 120,600" stroke="url(#strandGrad)" stroke-width="1" fill="none"/>
+      <!-- Small decorative circles -->
+      <circle cx="75" cy="150" r="3" fill="#C4907A" opacity="0.4"/>
+      <circle cx="110" cy="300" r="4" fill="#E8C4B8" opacity="0.5"/>
+      <circle cx="65" cy="450" r="2.5" fill="#C4907A" opacity="0.3"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-content" id="aboutContent">
+        <p class="section-label">About Us</p>
+        <h2>A Salon Built on Passion &amp; Precision</h2>
+        <p>The Hair Shop is a 5-star rated hairdressing salon in the heart of Horwich. We specialise in advanced colouring techniques including balayage, premium hair extensions, braiding, and treatments for all hair types including curly hair.</p>
+        <p>Our perfect 5-star rating from 19 wonderful customers reflects our commitment to making every client look and feel their absolute best. Whether you're after a complete transformation or a routine refresh, our skilled stylists are here to bring your vision to life.</p>
+        <div class="about-rating-inline">
+          <span class="stars-inline">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span>5.0 rating &middot; 19 reviews</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== REVIEWS ==================== -->
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="review-content" id="reviewContent">
+      <p class="section-label" style="color: var(--rose-gold); margin-bottom: var(--space-sm);">Happy Clients</p>
+      <span class="review-number" id="reviewNumber">0</span>
+      <span class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <p class="review-label">Wonderful Reviews</p>
+      <p class="review-count">5.0 star rating on Google</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-block">
+          <span class="contact-block-label">Phone</span>
+          <a href="tel:07436278514">07436 278514</a>
+        </div>
+
+        <div class="contact-block">
+          <span class="contact-block-label">Address</span>
+          <p>8 Chapel St, Horwich<br>Bolton BL6 6BW</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=8+Chapel+St,+Horwich,+Bolton+BL6+6BW" target="_blank" rel="noopener noreferrer" class="map-link clickable">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            View on Google Maps
+          </a>
+        </div>
+
+        <div class="contact-block">
+          <span class="contact-block-label">Opening Hours</span>
+          <p class="hours-note">Not publicly listed &mdash; please call to confirm</p>
+        </div>
+
+        <div class="contact-block">
+          <span class="contact-block-label">WhatsApp</span>
+          <a href="https://wa.me/447436278514" target="_blank" rel="noopener noreferrer">Message us on WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+          Thank you! Your message has been sent successfully. We'll be in touch soon.
+        </div>
+
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New enquiry from The Hair Shop website">
+          <input type="checkbox" name="botcheck" style="display: none;">
+
+          <div class="form-group">
+            <label for="formName">Name</label>
+            <input type="text" id="formName" name="name" placeholder="Your name" required autocomplete="name">
+            <p class="form-error" id="nameError">Please enter your name.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" name="email" placeholder="your@email.com" required autocomplete="email">
+            <p class="form-error" id="emailError">Please enter a valid email address.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="formPhone">Phone</label>
+            <input type="tel" id="formPhone" name="phone" placeholder="Your phone number" autocomplete="tel">
+            <p class="form-error" id="phoneError">Please enter a valid phone number.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="formMessage">Message</label>
+            <textarea id="formMessage" name="message" placeholder="How can we help? Tell us about your hair goals..." required></textarea>
+            <p class="form-error" id="messageError">Please enter a message.</p>
+          </div>
+
+          <button type="submit" class="btn-submit clickable" id="submitBtn">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-logo">THE <span>HAIR</span> SHOP</p>
+      <p class="footer-address">8 Chapel St, Horwich, Bolton BL6 6BW</p>
+      <a href="tel:07436278514" class="footer-phone">07436 278514</a>
+      <p class="footer-copy">&copy; <span id="year"></span> The Hair Shop. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== STICKY CALL BAR ==================== -->
+<div class="sticky-call" id="stickyCall" aria-hidden="true">
+  <a href="tel:07436278514" class="clickable">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </svg>
+    Call Now
+  </a>
+  <a href="https://wa.me/447436278514" target="_blank" rel="noopener noreferrer" class="clickable">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    WhatsApp
+  </a>
+</div>
+
+<script>
+// ============================================
+// DETECT reduced motion preference
+// ============================================
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ============================================
+// LENIS SMOOTH SCROLL
+// ============================================
+let lenis;
+if (!prefersReducedMotion) {
+  lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+  });
+
+  // Connect Lenis to GSAP ScrollTrigger
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+  gsap.ticker.lagSmoothing(0);
+}
+
+// ============================================
+// CUSTOM CURSOR
+// ============================================
+const cursor = document.getElementById('cursor');
+const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+
+if (cursor && !isTouchDevice && !prefersReducedMotion) {
+  let mouseX = 0, mouseY = 0;
+  let cursorX = 0, cursorY = 0;
+
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animateCursor() {
+    cursorX += (mouseX - cursorX) * 0.15;
+    cursorY += (mouseY - cursorY) * 0.15;
+    cursor.style.left = cursorX + 'px';
+    cursor.style.top = cursorY + 'px';
+    requestAnimationFrame(animateCursor);
+  }
+  animateCursor();
+
+  // Hover effect on interactive elements
+  const clickables = document.querySelectorAll('a, button, .clickable');
+  clickables.forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+  });
+}
+
+// ============================================
+// NAVIGATION SCROLL EFFECT
+// ============================================
+const nav = document.getElementById('nav');
+let lastScroll = 0;
+
+window.addEventListener('scroll', () => {
+  const currentScroll = window.scrollY;
+  if (currentScroll > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+  lastScroll = currentScroll;
+}, { passive: true });
+
+// ============================================
+// MOBILE MENU
+// ============================================
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.contains('open');
+  mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('active');
+  hamburger.setAttribute('aria-expanded', !isOpen);
+  mobileMenu.setAttribute('aria-hidden', isOpen);
+  document.body.style.overflow = isOpen ? '' : 'hidden';
+});
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    hamburger.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  });
+});
+
+// ============================================
+// SMOOTH SCROLL FOR ANCHOR LINKS
+// ============================================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    if (targetId === '#') return;
+    const target = document.querySelector(targetId);
+    if (target) {
+      if (lenis) {
+        lenis.scrollTo(target, { offset: -60 });
+      } else {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+});
+
+// ============================================
+// PAGE LOAD ANIMATIONS
+// ============================================
+if (!prefersReducedMotion) {
+  const loadTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+  // "THE" fades in
+  loadTl.to('#heroThe', {
+    opacity: 1,
+    duration: 0.8,
+    delay: 0.2
+  });
+
+  // "HAIR" slides from left
+  loadTl.to('#heroHair', {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+  }, '-=0.4');
+
+  // "SHOP" slides from right
+  loadTl.to('#heroShop', {
+    opacity: 1,
+    x: 0,
+    duration: 1,
+  }, '<');
+
+  // Scissors SVG fades in and draws
+  loadTl.to('#heroScissors', {
+    opacity: 0.35,
+    duration: 1,
+  }, '-=0.8');
+
+  loadTl.to('.scissors-blade', {
+    strokeDashoffset: 0,
+    duration: 1.5,
+    stagger: 0.1,
+    ease: 'power2.inOut'
+  }, '-=1');
+
+  // Tagline, rating, CTA fade in
+  loadTl.to(['#heroTagline', '#heroRating', '#heroCta'], {
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    stagger: 0.15
+  }, '-=0.6');
+
+  // Scroll chevron
+  loadTl.to('#scrollChevron', {
+    opacity: 1,
+    duration: 0.6
+  }, '-=0.4');
+
+  // Set initial states for hero animations
+  gsap.set('#heroHair', { x: -80 });
+  gsap.set('#heroShop', { x: 80 });
+  gsap.set(['#heroTagline', '#heroRating', '#heroCta'], { y: 20 });
+
+} else {
+  // Reduced motion: show everything immediately
+  document.querySelectorAll('.hero-the, .hero-hair, .hero-shop, .hero-scissors, .hero-tagline, .hero-rating, .hero-cta, .scroll-chevron').forEach(el => {
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+  });
+  document.querySelectorAll('.scissors-blade').forEach(el => {
+    el.style.strokeDashoffset = '0';
+  });
+}
+
+// ============================================
+// SCROLL TRIGGERED ANIMATIONS
+// ============================================
+if (!prefersReducedMotion) {
+  // Service cards - asymmetric stagger
+  const serviceCards = document.querySelectorAll('.service-card');
+  serviceCards.forEach((card, i) => {
+    const isEven = i % 2 === 0;
+    gsap.to(card, {
+      opacity: 1,
+      y: isEven ? 0 : 30,
+      duration: 0.8,
+      ease: 'power3.out',
+      scrollTrigger: {
+        trigger: card,
+        start: 'top 88%',
+        toggleActions: 'play none none none'
+      },
+      delay: isEven ? 0 : 0.15
+    });
+  });
+
+  // About section
+  gsap.to('#aboutContent', {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: '#aboutContent',
+      start: 'top 80%',
+      toggleActions: 'play none none none'
+    }
+  });
+
+  // Reviews section
+  gsap.to('#reviewContent', {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: 'power3.out',
+    scrollTrigger: {
+      trigger: '#reviewContent',
+      start: 'top 80%',
+      toggleActions: 'play none none none'
+    }
+  });
+
+  // Count-up animation for review number
+  const reviewNumberEl = document.getElementById('reviewNumber');
+  ScrollTrigger.create({
+    trigger: reviewNumberEl,
+    start: 'top 85%',
+    onEnter: () => {
+      gsap.to({ val: 0 }, {
+        val: 19,
+        duration: 2,
+        ease: 'power2.out',
+        onUpdate: function() {
+          reviewNumberEl.textContent = Math.round(this.targets()[0].val);
+        }
+      });
+    },
+    once: true
+  });
+} else {
+  // Reduced motion: show all
+  document.querySelectorAll('.service-card, .about-content, .review-content').forEach(el => {
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+  });
+  document.getElementById('reviewNumber').textContent = '19';
+}
+
+// ============================================
+// STICKY CALL BAR
+// ============================================
+const stickyCall = document.getElementById('stickyCall');
+const heroSection = document.getElementById('hero');
+
+function updateStickyCall() {
+  if (!heroSection || !stickyCall) return;
+  const heroBottom = heroSection.getBoundingClientRect().bottom;
+  if (heroBottom < 0) {
+    stickyCall.classList.add('visible');
+  } else {
+    stickyCall.classList.remove('visible');
+  }
+}
+
+window.addEventListener('scroll', updateStickyCall, { passive: true });
+
+// ============================================
+// MAGNETIC HOVER (desktop only)
+// ============================================
+if (!isTouchDevice && !prefersReducedMotion) {
+  const magneticElements = document.querySelectorAll('.btn-submit, .hero-cta a');
+  magneticElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      el.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+    });
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
+    });
+  });
+}
+
+// ============================================
+// CONTACT FORM VALIDATION
+// ============================================
+const contactForm = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const submitBtn = document.getElementById('submitBtn');
+
+function showError(id, show) {
+  document.getElementById(id).classList.toggle('visible', show);
+}
+
+function validateEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function validatePhone(phone) {
+  if (!phone) return true;
+  return /^[\d\s\+\-\(\)]{7,20}$/.test(phone);
+}
+
+contactForm.addEventListener('submit', function(e) {
+  e.preventDefault();
+  let isValid = true;
+
+  const name = document.getElementById('formName').value.trim();
+  const email = document.getElementById('formEmail').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const message = document.getElementById('formMessage').value.trim();
+
+  // Reset errors
+  showError('nameError', false);
+  showError('emailError', false);
+  showError('phoneError', false);
+  showError('messageError', false);
+  formSuccess.classList.remove('visible');
+
+  if (!name) {
+    showError('nameError', true);
+    isValid = false;
+  }
+
+  if (!email || !validateEmail(email)) {
+    showError('emailError', true);
+    isValid = false;
+  }
+
+  if (phone && !validatePhone(phone)) {
+    showError('phoneError', true);
+    isValid = false;
+  }
+
+  if (!message) {
+    showError('messageError', true);
+    isValid = false;
+  }
+
+  if (!isValid) return;
+
+  // Check if using placeholder access key
+  const accessKey = contactForm.querySelector('input[name="access_key"]').value;
+  if (accessKey === 'YOUR_ACCESS_KEY_HERE') {
+    formSuccess.textContent = 'Form configured successfully! Please set your Web3Forms access key to start receiving messages.';
+    formSuccess.classList.add('visible');
+    contactForm.reset();
+    return;
+  }
+
+  // Submit form
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = 'Sending...';
+
+  fetch(contactForm.action, {
+    method: 'POST',
+    body: new FormData(contactForm)
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      formSuccess.textContent = 'Thank you! Your message has been sent successfully. We\'ll be in touch soon.';
+      formSuccess.classList.add('visible');
+      contactForm.reset();
+    } else {
+      formSuccess.textContent = 'Something went wrong. Please try again or call us directly.';
+      formSuccess.style.color = '#e07a7a';
+      formSuccess.classList.add('visible');
+    }
+  })
+  .catch(() => {
+    formSuccess.textContent = 'Something went wrong. Please try again or call us directly.';
+    formSuccess.style.color = '#e07a7a';
+    formSuccess.classList.add('visible');
+  })
+  .finally(() => {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>';
+  });
+});
+
+// ============================================
+// FOOTER YEAR
+// ============================================
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ============================================
+// SCROLL RESET ON PAGE LOAD
+// ============================================
+if (history.scrollRestoration) {
+  history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+</script>
+</body>
+</html>
